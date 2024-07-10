@@ -8,10 +8,10 @@ headerTag = `
                 <span><a href="#" title="AK몰 - 백화점을 클릭하다" onclick="addFavorite('https://www.akmall.com/akevent/common/event_favorite.jsp');" rel="sidebar">즐겨찾기</a></span>
             </div>
             <div class="inr">
-                <span><a href="#" onclick="loginPop('https://www.akmall.com/mypage/OrderDeliInquiry.do','HD_03_01@0');  return false;" title="바로가기">주문배송조회</a></span>
+                <span><a href="https://www.akmall.com/mypage/OrderDeliInquiry.do" onclick="goUrlPath(this.href, '', '','HD_03_01@0');  return false;" title="바로가기">주문배송조회</a></span>
                 <span><a href="https://www.akmall.com/bestseller/FrequentlyOrder.do" onclick="goUrlPath(this.href, '', 'HD_03_05', '0'); return false;" title="바로가기">자주구매</a></span>
                 <span><a href="https://www.akmall.com/event/MemberGradeBnftInfoNew.do" onclick="goUrlPath(this.href, '', 'HD_03_02', '0'); return false;" title="바로가기">회원혜택</a></span>
-                <span><a href="#" onclick="loginPop('https://www.akmall.com/mypage/CounselContent.do', 'HD_03_03@0'); return false;" title="바로가기">1:1문의</a></span>
+                <span><a href="https://www.akmall.com/mypage/CounselContent.do" onclick="goUrlPath(this.href, '', 'HD_03_03@0'); return false;" title="바로가기">1:1문의</a></span>
                 <span><a href="https://www.akmall.com/customer/CustCenterMain.do" onclick="goUrlPath(this.href, '', 'HD_03_04', '0'); return false;" title="바로가기">고객센터</a></span>
             </div>
         </div>
@@ -74,14 +74,14 @@ headerTag = `
         <div class="util_group">
             <!-- 로그인 -->
             <span>
-                <a href="#" target="_blank" onclick="loginPop(this.href, '', 'HD_01_01', '0');return false;" title="바로가기">로그인</a>
+                <a href="https://www.akmall.com/login/Login.do" target="_blank" onclick="goUrlPath(this.href, '', 'HD_01_01', '0');return false;" title="바로가기">로그인</a>
             </span>
             <!-- 회원가입 -->
             <span>
                 <a href="https://www.akmall.com/login/JoinGate.do" onclick="goUrlPath(this.href, '', 'HD_01_03', '0'); return false;" title="바로가기">회원가입</a>
             </span>
             <span>
-                <a href="https://www.akmall.com/mypage/MyPlaceMain.do" onclick="loginPop('this.href','', 'HD_01_04', '0'); return false;" title="바로가기">나만의 공간</a>
+                <a href="https://www.akmall.com/mypage/MyPlaceMain.do" onclick="goUrlPath(this.href, '', 'HD_01_04', '0'); return false;" title="바로가기">나만의 공간</a>
             </span>				
             <!-- [D] 장바구니 빨간색 타입 red 클래스 추가해주세요 -->
             <span>
