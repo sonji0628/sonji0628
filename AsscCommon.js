@@ -9,6 +9,11 @@ if (locationPort.length > 0)
     ordHttpDomain = "http://www.akmall.com";
 }
 
+/* 자동 로그인 해제 */
+document.cookie = 'alKey=escape("");path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=.akmall.com';
+document.cookie = 'alMemNo=escape("");path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=.akmall.com';
+/* 자동 로그인 해제 : 끝 */
+
 
 function AppDownloadPopup() {
     openWindowPopup(ordHttpDomain + '/event/openPopupJsp.do?returnUrl=/popup/pAppDownload&urlpath=A_03_03', 'AppDownload_Popup', '550', '350', 'center');	
