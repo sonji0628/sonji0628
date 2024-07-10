@@ -3,10 +3,6 @@ headerTag = `
 <div id="header" class="header">
     <div class="quick_menu_group">
         <div class="area">
-            <div>
-                <span><a href="#" onclick="AppDownloadPopup();" title="바로가기">앱다운로드</a></span>
-                <span><a href="#" title="AK몰 - 백화점을 클릭하다" onclick="addFavorite('https://www.akmall.com/akevent/common/event_favorite.jsp');" rel="sidebar">즐겨찾기</a></span>
-            </div>
             <div class="inr">
                 <span><a href="https://www.akmall.com/mypage/OrderDeliInquiry.do" onclick="goUrlPath(this.href, '', '','HD_03_01@0');  return false;" title="바로가기">주문배송조회</a></span>
                 <span><a href="https://www.akmall.com/bestseller/FrequentlyOrder.do" onclick="goUrlPath(this.href, '', 'HD_03_05', '0'); return false;" title="바로가기">자주구매</a></span>
