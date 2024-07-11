@@ -8,7 +8,7 @@ headerTag = `
                 <span><a href="https://www.akmall.com/bestseller/FrequentlyOrder.do" onclick="goUrlPath(this.href, '', 'HD_03_05', '0'); return false;" title="바로가기">자주구매</a></span>
                 <span><a href="https://www.akmall.com/event/MemberGradeBnftInfoNew.do" onclick="goUrlPath(this.href, '', 'HD_03_02', '0'); return false;" title="바로가기">회원혜택</a></span>
                 <span><a href="https://www.akmall.com/mypage/CounselContent.do" onclick="goUrlPath(this.href, '', 'HD_03_03@0'); return false;" title="바로가기">1:1문의</a></span>
-                <span><a href="https://www.akmall.com/customer/CustCenterMain.do" onclick="goUrlPath(this.href, '', 'HD_03_04', '0'); return false;" title="바로가기">고객센터</a></span>
+                <span><a href="https://www.akmall.com/customer/CustCenterMain.do" onclick="goUrlPath(this.href, '', 'HD_03_04', '0'); return false;" title="바로가기" style="margin-right: 0;">고객센터</a></span>
             </div>
         </div>
     </div>
