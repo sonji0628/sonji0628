@@ -3,6 +3,10 @@ headerTag = `
 <div id="header" class="header">
     <div class="quick_menu_group">
         <div class="area">
+            <div>
+				<span><a href="#" onclick="AppDownloadPopup();" title="바로가기">앱다운로드</a></span>
+				<span><a href="#" title="AK몰 - 백화점을 클릭하다" onclick="addFavorite('http://www.akmall.com/akevent/common/event_favorite.jsp');" rel="sidebar">즐겨찾기</a></span>
+			</div>
             <div class="inr">
                 <span><a href="https://www.akmall.com/mypage/OrderDeliInquiry.do" onclick="goUrlPath(this.href, '', '','HD_03_01@0');  return false;" title="바로가기">주문배송조회</a></span>
                 <span><a href="https://www.akmall.com/bestseller/FrequentlyOrder.do" onclick="goUrlPath(this.href, '', 'HD_03_05', '0'); return false;" title="바로가기">자주구매</a></span>
@@ -59,31 +63,21 @@ headerTag = `
                     <fieldset>  
                         <legend>통합검색</legend>
                         <input type="text" id="search" name="search" class="search_input" title="검색어 입력" maxlength="100" style="ime-mode:active;" autocomplete="off">								
-                        <div class="search_group" id="ark"><div id="ark_down" style="position: absolute; display: block; cursor: pointer; top: 3px; left: 336px;"></div>
-                        <div id="ark_up" style="position: absolute; display: none; cursor: pointer; top: 3px; left: 336px;"></div>
-                        <button type="button" class="sch_btn" onclick="goSearch();"><i class="ico ico_search"><em>검색</em></i></button>
+                        <button type="button" class="sch_btn" onclick="doSearchMain();"><i class="ico ico_search"><em>검색</em></i></button>
                     </fieldset>
                 </form>
             </div>
         </div>
         <!-- //search -->
         <div class="util_group">
-            <!-- 로그인 -->
-            <span>
-                <a href="https://www.akmall.com/login/Login.do" target="_blank" onclick="goUrlPath(this.href, '', 'HD_01_01', '0');return false;" title="바로가기">로그인</a>
-            </span>
-            <!-- 회원가입 -->
-            <span>
-                <a href="https://www.akmall.com/login/JoinGate.do" onclick="goUrlPath(this.href, '', 'HD_01_03', '0'); return false;" title="바로가기">회원가입</a>
-            </span>
             <span>
                 <a href="https://www.akmall.com/mypage/MyPlaceMain.do" onclick="goUrlPath(this.href, '', 'HD_01_04', '0'); return false;" title="바로가기">나만의 공간</a>
             </span>				
-            <!-- [D] 장바구니 빨간색 타입 red 클래스 추가해주세요 -->
             <span>
-                <a href="https://www.akmall.com/order/ShoppingCart.do" onclick="goUrlPath(this.href, '', 'HD_01_05', '0'); return false;" title="바로가기">장바구니<em class="circle_count">0</em></a>
+                <a href="https://www.akmall.com/order/ShoppingCart.do" onclick="goUrlPath(this.href, '', 'HD_01_05', '0'); return false;" title="바로가기">장바구니</a>
             </span>
         </div>
     </div>
 </div>`
 document.write(headerTag);
+
